@@ -15,6 +15,11 @@
 		62EAF35E1D86860D00AA2F71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62EAF35C1D86860D00AA2F71 /* LaunchScreen.storyboard */; };
 		62EAF3691D86860D00AA2F71 /* QRcodeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAF3681D86860D00AA2F71 /* QRcodeDemoTests.m */; };
 		62EAF3741D86860D00AA2F71 /* QRcodeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAF3731D86860D00AA2F71 /* QRcodeDemoUITests.m */; };
+		62EAF38B1D868A0700AA2F71 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 62EAF3871D868A0700AA2F71 /* beep.wav */; };
+		62EAF38C1D868A0700AA2F71 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAF3891D868A0700AA2F71 /* QRCodeViewController.m */; };
+		62EAF38D1D868A0700AA2F71 /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62EAF38A1D868A0700AA2F71 /* QRCodeViewController.xib */; };
+		62EAF3911D868AA600AA2F71 /* WebVCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAF38F1D868AA600AA2F71 /* WebVCtrl.m */; };
+		62EAF3921D868AA600AA2F71 /* WebVCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62EAF3901D868AA600AA2F71 /* WebVCtrl.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,13 @@
 		62EAF36F1D86860D00AA2F71 /* QRcodeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRcodeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62EAF3731D86860D00AA2F71 /* QRcodeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRcodeDemoUITests.m; sourceTree = "<group>"; };
 		62EAF3751D86860D00AA2F71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62EAF3871D868A0700AA2F71 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		62EAF3881D868A0700AA2F71 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		62EAF3891D868A0700AA2F71 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		62EAF38A1D868A0700AA2F71 /* QRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
+		62EAF38E1D868AA600AA2F71 /* WebVCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebVCtrl.h; sourceTree = "<group>"; };
+		62EAF38F1D868AA600AA2F71 /* WebVCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebVCtrl.m; sourceTree = "<group>"; };
+		62EAF3901D868AA600AA2F71 /* WebVCtrl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebVCtrl.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +113,14 @@
 		62EAF34D1D86860D00AA2F71 /* QRcodeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				62EAF3811D86879C00AA2F71 /* QRcodeLib */,
 				62EAF3511D86860D00AA2F71 /* AppDelegate.h */,
 				62EAF3521D86860D00AA2F71 /* AppDelegate.m */,
 				62EAF3541D86860D00AA2F71 /* ViewController.h */,
 				62EAF3551D86860D00AA2F71 /* ViewController.m */,
+				62EAF38E1D868AA600AA2F71 /* WebVCtrl.h */,
+				62EAF38F1D868AA600AA2F71 /* WebVCtrl.m */,
+				62EAF3901D868AA600AA2F71 /* WebVCtrl.xib */,
 				62EAF3571D86860D00AA2F71 /* Main.storyboard */,
 				62EAF35A1D86860D00AA2F71 /* Assets.xcassets */,
 				62EAF35C1D86860D00AA2F71 /* LaunchScreen.storyboard */,
@@ -138,6 +154,17 @@
 				62EAF3751D86860D00AA2F71 /* Info.plist */,
 			);
 			path = QRcodeDemoUITests;
+			sourceTree = "<group>";
+		};
+		62EAF3811D86879C00AA2F71 /* QRcodeLib */ = {
+			isa = PBXGroup;
+			children = (
+				62EAF3871D868A0700AA2F71 /* beep.wav */,
+				62EAF3881D868A0700AA2F71 /* QRCodeViewController.h */,
+				62EAF3891D868A0700AA2F71 /* QRCodeViewController.m */,
+				62EAF38A1D868A0700AA2F71 /* QRCodeViewController.xib */,
+			);
+			path = QRcodeLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +234,7 @@
 				TargetAttributes = {
 					62EAF34A1D86860D00AA2F71 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZZ3M7V8X7R;
 					};
 					62EAF3631D86860D00AA2F71 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -243,9 +271,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62EAF3921D868AA600AA2F71 /* WebVCtrl.xib in Resources */,
+				62EAF38B1D868A0700AA2F71 /* beep.wav in Resources */,
 				62EAF35E1D86860D00AA2F71 /* LaunchScreen.storyboard in Resources */,
 				62EAF35B1D86860D00AA2F71 /* Assets.xcassets in Resources */,
 				62EAF3591D86860D00AA2F71 /* Main.storyboard in Resources */,
+				62EAF38D1D868A0700AA2F71 /* QRCodeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +303,8 @@
 			files = (
 				62EAF3561D86860D00AA2F71 /* ViewController.m in Sources */,
 				62EAF3531D86860D00AA2F71 /* AppDelegate.m in Sources */,
+				62EAF3911D868AA600AA2F71 /* WebVCtrl.m in Sources */,
+				62EAF38C1D868A0700AA2F71 /* QRCodeViewController.m in Sources */,
 				62EAF3501D86860D00AA2F71 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,10 +446,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QRcodeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guang.www.QRcodeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +461,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QRcodeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guang.www.QRcodeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
